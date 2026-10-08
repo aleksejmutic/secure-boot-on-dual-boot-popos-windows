@@ -3,7 +3,7 @@
 Notes on what I did, why it worked, and why it didn't. Written so I can remember where I am.
 
 **Setup:** Lenovo IdeaPad Gaming 3 15IHU6, Pop!_OS (LUKS encrypted) + Windows 11, systemd-boot as boot menu.
-**Goal:** Secure Boot on.
+**Goal:** Have Secure Boot on, while making both Pop!_OS and Windows bootable.
 
 ## The problem
 
