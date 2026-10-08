@@ -118,4 +118,4 @@ sudo mokutil --import <module-signing-key>.der
 
 - If something breaks: BIOS -> Restore Factory Keys, or turn Secure Boot off.
 - BitLocker is off on Windows, so no recovery key issues.
-- My shell aliases `ls` to something that throws `--icons` errors, use `command ls`.
+- Pop!_OS (LUKS encrypted)
