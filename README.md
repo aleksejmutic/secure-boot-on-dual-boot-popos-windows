@@ -110,7 +110,7 @@ sudo mokutil --import <module-signing-key>.der
 
 ## TODO
 
-- [ ] Test Windows boot with Secure Boot on (`msinfo32` -> Secure Boot State: On)
+- [x] Test Windows boot with Secure Boot on (`msinfo32` -> Secure Boot State: On)
 - [ ] Hook to re-sign kernels after updates (`sudo sbctl sign-all`), otherwise Pop won't boot after a kernel update
 - [ ] shim + MOK for NVIDIA
 - [ ] DKMS auto-signing
