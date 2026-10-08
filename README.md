@@ -10,7 +10,7 @@ Notes on what I did, why it worked, and why it didn't. Written so I can remember
 
 Windows boots with Secure Boot because Microsoft signs its bootloader and the firmware trusts Microsoft's keys by default.
 
-Pop!_OS uses systemd-boot and kernelstub (installs kernels and writes boot entries). Nothing signs these files, so with Secure Boot on the firmware refuses to run them and only Windows boots.
+Pop!_OS uses systemd-boot and kernelstub (installs kernels and writes boot entries). Nothing signs these files, so with Secure Boot on the firmware, it refuses to run them and only Windows boots.
 
 With Secure Boot off everything works and I just pick the entry in the systemd-boot menu.
 
@@ -33,7 +33,7 @@ sudo cp ~/go/bin/sbctl /usr/local/bin/
 sbctl kept saying `old configuration detected` because the `secureboot-db` package owns `/usr/share/secureboot`. I moved it out of the way:
 
 ```bash
-sudo mv /usr/share/secureboot /usr/share/secureboot.bak
+sudo mv /usr/share/secureboot /usr/share/secureboot.bak    #backup workaround
 ```
 
 ### 3. Create keys
