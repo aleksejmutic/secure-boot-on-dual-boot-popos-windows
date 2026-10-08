@@ -3,7 +3,7 @@
 Notes on what I did, why it worked, and why it didn't. Written so I can remember where I am.
 
 **Setup:** Lenovo IdeaPad Gaming 3 15IHU6, Pop!_OS (LUKS encrypted) + Windows 11, systemd-boot as boot menu.
-**Goal:** Secure Boot on, so Vanguard (League) works, without losing Pop!_OS.
+**Goal:** Secure Boot on.
 
 ## The problem
 
@@ -110,7 +110,6 @@ sudo mokutil --import <module-signing-key>.der
 ## TODO
 
 - [ ] Test Windows boot with Secure Boot on (`msinfo32` -> Secure Boot State: On)
-- [ ] Test League / Vanguard
 - [ ] Hook to re-sign kernels after updates (`sudo sbctl sign-all`), otherwise Pop won't boot after a kernel update
 - [ ] shim + MOK for NVIDIA
 - [ ] DKMS auto-signing
